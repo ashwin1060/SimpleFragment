@@ -1,0 +1,4 @@
+# ANDROID IGNORES
+# Built Application Files
+*.apk
+*.ap_

@@ -1,0 +1,32 @@
+<div class="jumbotron">
+	<h1 class="text-center">Today's Reservation!</h1>
+	<div>
+		<table class="table table-condensed table-striped table-bordered">
+			<thead>
+				<tr id="table_head">
+					<th ng-click="prop='RID'; reverse=!reverse;">RID#</th>
+					<th ng-click="prop='FName'; reverse=!reverse;">First Name</th>
+					<th ng-click="prop='LName'; reverse=!reverse;">Last Name</th>
+					<th ng-click="prop='Date'; reverse=!reverse;">Date</th>
+					<th ng-click="prop='NoOfGuest'; reverse=!reverse;">#</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody ng-init="prop='RID'; reverse:true">
+				<tr ng-repeat="r in reservations | orderBy:prop:reverse | filter: searchBy">
+					<td>{{r.RID}}</td>
+					<td>{{r.FName}}</td>
+					<td>{{r.LName}}</td>
+					<td>{{r.Date}}</td>
+					<td>{{r.NoOfGuest}}</td>
+					<td>
+						<button class="btn btn-warning" title="Open Details">
+							<span class="glyphicon glyphicon-circle-arrow-right"></span>
+							<span class="btn-text">Open</span>
+						</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

@@ -1,0 +1,30 @@
+<div class="jumbotron">
+	<h1 class="text-center">Contact List</h1>
+	<div>
+		<table class="table table-condensed table-striped table-bordered">
+			<thead>
+				<tr id="table_head">
+					<th ng-click="prop='CustomerFName'; reverse=!reverse;">First Name</th>
+					<th ng-click="prop='CustomerLName'; reverse=!reverse;">Last Name</th>
+					<th ng-click="prop='CustomerEmail'; reverse=!reverse;">Email</th>
+					<th ng-click="prop='CustomerPhone'; reverse=!reverse;">Phone</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody ng-init="prop='Email'; reverse:true">
+				<tr ng-repeat="u in listOfUsers">
+					<td>{{u.CustomerFName}}</td>
+					<td>{{u.CustomerLName}}</td>
+					<td>{{u.CustomerEmail}}</td>
+					<td>{{u.CustomerPhone}}</td>
+					<td>
+						<button class="btn btn-warning" title="Open Details">
+							<span class="glyphicon glyphicon-circle-arrow-right"></span>
+							<span class="btn-text">Open</span>
+						</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="adminApp">
+
+<head>
+	<meta charset="UTF-8">
+	<title>RRS Admin Controls</title>
+
+	<!-- Custom styles for this template -->
+    <link href="Styles/theme.css" rel="stylesheet">
+
+	<!--Bootstrap CSS and Fontawesome CDN-->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link href="bootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+	<!--Loading angular CDN-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+	<script type="text/javascript" src="scripts/ang-script.js"></script>
+</head>
+
+<!--Defining angular controller-->
+<body ng-controller="mainController">
+
+	<header>
+		<nav class="navbar navbar-default">
+		<div class="container">
+		  <div class="navbar-header">
+		    <a class="navbar-brand" href="#Reservations"><strong>Admin Controls</strong></a>
+		  </div>
+
+		  <ul class="nav navbar-nav navbar-right">
+		    <li><a href="SignIn.html"><i class="fa fa-lock"></i> Log Out</a></li>
+		  </ul>
+		</div>
+		</nav>
+	</header>
+
+	<section>
+		<div class="text-center">
+		<button type="button" id="Rbtn" class="btn btn-default"><a href="#Reservations"><i class="fa fa-cutlery"></i> Reservations</a></button>
+		<button type="button" id="Sbtn" class="btn btn-default"><a href="#Seatings"><i class="fa fa-table"></i> Seatings</a></button>
+		<button type="button" id="Cbtn" class="btn btn-default"><a href="#Contacts"><i class="fa fa-comment"></i> Contacts</a></button>
+		<button type="button" id="Wbtn" class="btn btn-default"><a href="#Waitlist"><i class="fa fa-clock-o"></i> Waitlist</a></button>
+		</div>
+	</section>
+	
+	<section id="layoutcontent">
+		
+		<h2><strong>Search Specifications</strong></h2>
+
+		<div class="row">
+			<div class="col-xs-5 col-sm-3 col-md-3"><input type="text" class="form-control" ng-model="searchBy" placeholder="Enter RID,First Name, Last Name,Phone, Email..."></div>
+		</div>
+
+	</section>
+
+	<section id="pagecontent">
+
+		<!--Main Content and Injected Views-->
+		<div id="main">
+		<!--Angular Templating-->
+			<div ng-view></div>
+		</div>
+	</section>
+	
+</body>
+</html>

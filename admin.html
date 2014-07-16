@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="bootstrap/assets/ico/favicon.ico">
+
+    <title>Admin Page</title>
+
+     <!--Font -->
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+    <link rel="shortcut icon" href=".\favicon.ico">
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="Styles/cover.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+        <div class="masthead clearfix">
+            <div class="inner">
+              <h1 class="masthead-brand">Admin Controls</h1>
+              <ul class="nav masthead-nav">
+                <li class="active"><a href="admin.html">Home</a></li>
+                <li><a href="SignIn.html">Log Out</a></li>
+              </ul>
+            </div>
+          </div>
+
+            <div class="inner cover">
+
+                <div class="adminContent">
+
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#tab-reservation" data-toggle="tab">
+                                <span class="glyphicon glyphicon-th-list"></span>
+                                <span class="tab-text">Reservations</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab-seating" data-toggle="tab">
+                                <span class="glyphicon glyphicon-th"></span>
+                                <span class="tab-text">Seating</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab-contact" data-toggle="tab">
+                                <span class="glyphicon glyphicon-earphone"></span>
+                                <span class="">Contact List</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                <div id="content" class="tab-content">
+                    
+                    <div class="tab-pane active" id="tab-reservation">
+                        
+                        <h6>Search Reservation by Specification</h6>
+                        
+                        <div class="row">
+                            <div class="input-group">
+                                <div class="col-sm-4"><input type="text" class="form-control" placeholder="Customer Email"></div>
+                                <div class="col-sm-3"><input type="text" class="form-control" placeholder="Customer Phone"></div>
+                                <div class="col-sm-3"><input type="date" class="form-control" placeholder="Reservation Date"></div>
+                                <div class="col-sm-1">
+                                    <button class="btn btn-success" title="Search Details">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        <span class="btn-text">Search</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table class="table table-condensed table-striped">
+                            <thead>
+                                <tr id="table_head">
+                                    <th>RID#</th>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                    <th>#</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ABC123</td>
+                                    <td>Ashwin Mishra</td>
+                                    <td>05/10/2014</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button class="btn btn-warning" title="Open Details">
+                                            <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                                            <span class="btn-text">Open</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ABC123</td>
+                                    <td>Ashwin Mishra</td>
+                                    <td>05/10/2014</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button class="btn btn-warning" title="Open Details">
+                                            <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                                            <span class="btn-text">Open</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ABC123</td>
+                                    <td>Ashwin Mishra</td>
+                                    <td>05/10/2014</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button class="btn btn-warning" title="Open Details">
+                                            <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                                            <span class="btn-text">Open</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ABC123</td>
+                                    <td>Ashwin Mishra</td>
+                                    <td>05/10/2014</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button class="btn btn-warning" title="Open Details">
+                                            <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                                            <span class="btn-text">Open</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ABC123</td>
+                                    <td>Ashwin Mishra</td>
+                                    <td>05/10/2014</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button class="btn btn-warning" title="Open Details">
+                                            <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                                            <span class="btn-text">Open</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ABC123</td>
+                                    <td>Ashwin Mishra</td>
+                                    <td>05/10/2014</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button class="btn btn-warning" title="Open Details">
+                                            <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                                            <span class="btn-text">Open</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ABC123</td>
+                                    <td>Ashwin Mishra</td>
+                                    <td>05/10/2014</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button class="btn btn-warning" title="Open Details">
+                                            <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                                            <span class="btn-text">Open</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ABC123</td>
+                                    <td>Ashwin Mishra</td>
+                                    <td>05/10/2014</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button class="btn btn-warning" title="Open Details">
+                                            <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                                            <span class="btn-text">Open</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ABC123</td>
+                                    <td>Ashwin Mishra</td>
+                                    <td>05/10/2014</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button class="btn btn-warning" title="Open Details">
+                                            <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                                            <span class="btn-text">Open</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ABC123</td>
+                                    <td>Ashwin Mishra</td>
+                                    <td>05/10/2014</td>
+                                    <td>4</td>
+                                    <td>
+                                        <button class="btn btn-warning" title="Open Details">
+                                            <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                                            <span class="btn-text">Open</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul class="pagination pagination-sm">
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+                
+                    <div class="tab-pane" id="tab-seating">
+                        <h6>Seating Area</h6>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Table#</th>
+                                        <th>Size</th>
+                                        <th>Status</th>
+                                        <th>Since</th>
+                                        <th>CNF#</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>Occupied</td>
+                                        <td>1:30PM</td>
+                                        <td>
+                                            <button type="button" class="btn btn-link">ABC123</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>Available</td>
+                                        <td>-</td>
+                                        <td>
+                                            <span class="btn-filler"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>Occupied</td>
+                                        <td>1:30PM</td>
+                                        <td>
+                                            <button type="button" class="btn btn-link">ABC123</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>Occupied</td>
+                                        <td>1:30PM</td>
+                                        <td>
+                                            <button type="button" class="btn btn-link">ABC123</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>Available</td>
+                                        <td>-</td>
+                                        <td>
+                                            <span class="btn-filler"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>Occupied</td>
+                                        <td>1:30PM</td>
+                                        <td>
+                                            <button type="button" class="btn btn-link">ABC123</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>Available</td>
+                                        <td>-</td>
+                                        <td>
+                                            <span class="btn-filler"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>Available</td>
+                                        <td>-</td>
+                                        <td>
+                                            <span class="btn-filler"></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul class="pagination pagination-sm">
+                                <li><a href="#">&laquo;</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">&raquo;</a></li>
+                            </ul>
+                    </div>
+                
+                    <div class="tab-pane" id="tab-contact">
+                        <h6>Customer Contact</h6>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Phone</th>
+                                        <th>Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Ashwin Mishra</td>
+                                        <td>1234567890</td>
+                                        <td>abc@x.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashwin Mishra</td>
+                                        <td>1234567890</td>
+                                        <td>abc@x.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashwin Mishra</td>
+                                        <td>1234567890</td>
+                                        <td>abc@x.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashwin Mishra</td>
+                                        <td>1234567890</td>
+                                        <td>abc@x.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashwin Mishra</td>
+                                        <td>1234567890</td>
+                                        <td>abc@x.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashwin Mishra</td>
+                                        <td>1234567890</td>
+                                        <td>abc@x.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashwin Mishra</td>
+                                        <td>1234567890</td>
+                                        <td>abc@x.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashwin Mishra</td>
+                                        <td>1234567890</td>
+                                        <td>abc@x.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashwin Mishra</td>
+                                        <td>1234567890</td>
+                                        <td>abc@x.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashwin Mishra</td>
+                                        <td>1234567890</td>
+                                        <td>abc@x.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul class="pagination pagination-sm">
+                                <li><a href="#">&laquo;</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">&raquo;</a></li>
+                            </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/assets/js/docs.min.js"></script>
+</body>
+</html>
